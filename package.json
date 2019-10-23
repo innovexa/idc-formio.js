@@ -38,10 +38,7 @@
     "url": "git+https://github.com/formio/formio.js.git"
   },
   "contributors": [
-    {
-      "name": "Form.io Open Source Community",
-      "url": "https://github.com/formio/formio.js/graphs/contributors"
-    }
+    "Form.io Open Source Community (https://github.com/formio/formio.js/graphs/contributors)"
   ],
   "license": "MIT",
   "bugs": {
@@ -140,5 +137,11 @@
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1",
     "written-number": "^0.9.1"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
 }
