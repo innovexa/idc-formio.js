@@ -1,5 +1,5 @@
 {
-  "name": "idc-formiojs",
+  "name": "@innovexa/idc-formiojs",
   "version": "4.5.0",
   "description": "JavaScript powered Forms with JSON Form Builder",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "lint"
   ],
   "scripts": {
-    "build": "esdoc;gulp build",
+    "build": "gulp build",
     "transpile": "babel ./src/ --out-dir ./lib/",
     "templates": "gulp templates",
     "watch": "babel -w ./src/ --out-dir ./lib/",
