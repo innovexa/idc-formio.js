@@ -4,6 +4,20 @@ export default [
   {
     weight: 400,
     type: 'select',
+    key: 'esType',
+    input: true,
+    label: 'Field Type',
+    data: {
+      values: [
+        { label: 'Text', value: 'keyword' },
+        { label: 'Floating Number', value: 'float' },
+        { label: 'Boolean', value: 'boolean' }
+      ]
+    }
+  },
+  {
+    weight: 400,
+    type: 'select',
     input: true,
     key: 'widget.type',
     label: 'Widget',

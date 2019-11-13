@@ -1,5 +1,12 @@
 export default [
   {
+    weight: 400,
+    type: 'hidden',
+    key: 'esType',
+    input: true,
+    defaultValue: 'boolean'
+  },
+  {
     type: 'select',
     input: true,
     key: 'displayInTimezone',

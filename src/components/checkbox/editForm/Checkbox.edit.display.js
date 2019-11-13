@@ -3,6 +3,13 @@ import _ from 'lodash';
 
 export default [
   {
+    weight: 400,
+    type: 'hidden',
+    key: 'esType',
+    input: true,
+    defaultValue: 'boolean'
+  },
+  {
     key: 'labelPosition',
     ignore: true,
   },

@@ -3,6 +3,20 @@ import Formio from '../../../Formio';
 
 export default [
   {
+    weight: 400,
+    type: 'select',
+    key: 'esType',
+    input: true,
+    label: 'Field Type',
+    data: {
+      values: [
+        { label: 'Text', value: 'keyword' },
+        { label: 'Floating Number', value: 'float' },
+        { label: 'Boolean', value: 'boolean' }
+      ]
+    }
+  },
+  {
     key: 'inputMask',
     ignore: true
   },

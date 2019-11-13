@@ -1,5 +1,19 @@
 export default [
   {
+    weight: 400,
+    type: 'select',
+    input: true,
+    key: 'esType',
+    label: 'Field Type',
+    data: {
+      values: [
+        { label: 'Text', value: 'keyword' },
+        { label: 'Floating Number', value: 'float' },
+        { label: 'Boolean', value: 'boolean' }
+      ]
+    }
+  },
+  {
     type: 'select',
     input: true,
     weight: 20,
