@@ -5,6 +5,7 @@
     margin-bottom: 1rem;
   }
 
+  /*--- PANEL: START ---*/
   .formio-component-panel {
 
     .card.border {
@@ -55,4 +56,72 @@
     }
 
   }
+  /*--- PANEL: END ---*/
+
+  /*--- SELECT: START ---*/
+  .formio-component-select {
+    label + .form-group {
+      margin-top: 0;
+    }
+  }
+  /*--- SELECT: END ---*/
+
+  /*--- CHECKBOX: START ---*/
+  .formio-component-checkbox {
+
+    .checkbox {
+      display: flex;
+      padding: 0;
+    }
+    .form-check-label {
+      color: inherit;
+      cursor: pointer;
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      padding-top: 0;
+      line-height: 18px;
+      min-height: 18px;
+      //padding-left: 34px;
+
+      input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+      }
+
+      span {
+        display: block;
+        position: relative;
+        padding-left: 34px;
+
+        &:before {
+          background: #fff;
+          border: 1px solid #d6d6d6;
+          display: inline-block;
+          margin: 0;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 18px;
+          width: 18px;
+          content: '';
+        }
+      }
+
+      input[type="checkbox"]:checked + span {
+        &:before {
+          background-color: #0d5898;
+          border-color: #0d5898;
+          content: '\2713';
+          color: #fff;
+          padding-left: 3px;
+        }
+      }
+    }
+
+  }
+  /*--- CHECKBOX: END ---*/
 }
