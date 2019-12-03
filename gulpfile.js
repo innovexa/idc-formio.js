@@ -86,7 +86,8 @@ gulp.task('styles-form', function formStyles() {
     './node_modules/flatpickr/dist/flatpickr.min.css',
     './node_modules/choices.js/public/assets/styles/choices.min.css',
     './node_modules/dialog-polyfill/dialog-polyfill.css',
-    './src/sass/formio.form.scss'
+    './src/sass/formio.form.scss',
+    './src/sass/formio.form.idc.scss'
   ], 'formio.form');
 });
 gulp.task('styles-builder', function builderStyles() {
@@ -96,7 +97,9 @@ gulp.task('styles-builder', function builderStyles() {
     './node_modules/dialog-polyfill/dialog-polyfill.css',
     './node_modules/dragula/dist/dragula.css',
     './src/sass/formio.form.scss',
-    './src/sass/formio.form.builder.scss'
+    './src/sass/formio.form.builder.scss',
+    './src/sass/formio.form.idc.scss',
+    './src/sass/formio.form.builder.idc.scss'
   ], 'formio.builder');
 });
 gulp.task('styles-full', gulp.series('builder-fonts', function fullStyles() {
@@ -107,7 +110,9 @@ gulp.task('styles-full', gulp.series('builder-fonts', function fullStyles() {
     './node_modules/dragula/dist/dragula.css',
     './node_modules/font-awesome/css/font-awesome.css',
     './src/sass/formio.form.scss',
-    './src/sass/formio.form.builder.scss'
+    './src/sass/formio.form.builder.scss',
+    './src/sass/formio.form.idc.scss',
+    './src/sass/formio.form.builder.idc.scss'
   ], 'formio.full');
 }));
 
