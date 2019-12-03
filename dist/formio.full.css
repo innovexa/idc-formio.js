@@ -3421,3 +3421,31 @@ div[data-oembed-url] {
 
 .builder-sidebar .btn {
   white-space: normal; }
+
+.formio-form .formio-component {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.formio-form .formio-component-panel .card.border {
+  border: 0 !important; }
+
+.formio-form .formio-component-panel .card-header {
+  display: -webkit-box;
+  display: flex;
+  position: relative; }
+  .formio-form .formio-component-panel .card-header .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #404040;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    min-height: 16px;
+    line-height: 18px; }
+
+.formio-form .formio-component-panel .card-body {
+  padding: 0.75rem 1.25rem; }
+
