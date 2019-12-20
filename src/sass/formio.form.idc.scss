@@ -1,4 +1,4 @@
-.formio-form {
+.formio-component-form {
 
   .formio-component {
     margin-top: 1rem;
@@ -13,59 +13,252 @@
     }
 
     .card-header {
-      //margin-top: 16px;
-      //padding: 0 0 12px 0;
       display: -webkit-box;
       display: flex;
+      //margin-top: 16px;
+      display: -webkit-box;
+      display: flex;
+      padding: 0 0 12px 0;
+      cursor: pointer;
       position: relative;
-      padding-left: 0;
-      //cursor: pointer;
-      background: none;
-
-      //&:before {
-      //  width: 16px;
-      //  height: 16px;
-      //  position: absolute;
-      //  top: 0;
-      //  left: 0;
-      //  background-repeat: no-repeat;
-      //  background-size: 16px 16px;
-      //  background-image: url('current-mark.svg');
-      //}
+      border: 0;
+      background-color: #ffffff;
 
       .card-title {
-         font-size: 16px;
-         font-weight: 600;
-         font-style: normal;
-         font-stretch: normal;
-         letter-spacing: 1px;
-         color: #404040;
-         text-transform: uppercase;
-         display: block;
-         width: 100%;
-         //padding-right: 16px;
-         //padding-left: 30px;
-         min-height: 16px;
-         line-height: 18px;
-         //cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 1px;
+        color: #404040;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        padding-right: 16px;
+        padding-left: 30px;
+        min-height: 16px;
+        line-height: 18px;
+        cursor: pointer;
+
+        &:before {
+          content: '';
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url("assets/image/current-mark.svg");
+          background-repeat: no-repeat;
+          background-size: 16px 16px;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          height: 1px;
+          left: 30px;
+          right: 0;
+          bottom: 0;
+          border-bottom: 1px solid #e7e7e7;
+        }
+
+        .formio-collapse-icon {
+          font-family: "Font Awesome 5 Free";
+          width: 16px;
+          height: 16px;
+          margin-left: auto;
+          margin-right: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          line-height: 18px;
+          text-align: right;
+          color: #404040!important;
+
+          &.fa-plus-square-o:before {
+            content: "\f0fe";
+          }
+          &.fa-minus-square-o:before {
+            content: "\f146";
+          }
+        }
+
       }
     }
 
     .card-body {
-      padding: 0.75rem 1.25rem !important;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      border-top: 0;
+      border-radius: 0;
+      padding: 20px 0 20px 20px !important;
+      padding-right: 30px!important;
+      background-color: #f6f6f6;
 
       > .formio-component {
         margin-top: 0;
       }
     }
 
+    &.inner-panel {
+
+      .card-header {
+        background-color: #f6f6f6;
+        border-bottom: 1px solid #e7e7e7;
+
+        .card-title {
+          padding-left: 0;
+          padding-right: 0;
+
+          &:before {
+            width: 0;
+            height: 0;
+            background-image: none;
+          }
+
+          &:after {
+            border: none;
+            width: 0;
+            height: 0;
+          }
+
+          .formio-collapse-icon {
+            position: relative;
+            margin-right: 15px;
+
+            &.fa-plus-square-o:before {
+              background: #fff;
+              border: 1px solid #d6d6d6;
+              display: inline-block;
+              margin: 0;
+              overflow: hidden;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 18px;
+              width: 18px;
+              content: '';
+            }
+            &.fa-minus-square-o:before {
+              display: inline-block;
+              margin: 0;
+              overflow: hidden;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 18px;
+              width: 18px;
+              background-color: #0d5898;
+              border-color: #0d5898;
+              content: '\2713';
+              color: #fff;
+              padding-left: 3px;
+            }
+
+          }
+        }
+      }
+
+      .card-body {
+        background-color: inherit;
+        margin-left: 0;
+      }
+
+    }
   }
   /*--- PANEL: END ---*/
+
+  /*--- Form elements: START ---*/
+
+  .form-group label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 0 !important;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .col-form-label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 !important;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .required {
+    border: 0;
+    background: 0;
+
+    .input-group {
+      border: solid 1px rgba(255, 0, 0, 0.5);
+
+      .input-group-prepend > .input-group-text {
+        border-right-color: rgba(255, 0, 0, 0.5);
+      }
+      .input-group-append > .input-group-text {
+        border-left-color: rgba(255, 0, 0, 0.5);
+      }
+
+      input, textarea, .selection.dropdown {
+        border-top: 0;
+        border-bottom: 0;
+      }
+    }
+
+    input, textarea, .selection.dropdown {
+      background-color: rgba(255, 0, 0, 0.1);
+      border: solid 1px rgba(255, 0, 0, 0.5);
+    }
+
+    &.formio-modified:not(.has-error) {
+      .input-group, input, textarea, .selection.dropdown {
+        background-color: #fff;
+      }
+    }
+
+    .formio-errors.invalid-feedback {
+      color: rgba(255, 0, 0, 0.5);
+    }
+  }
+  /*--- Form elements: START ---*/
 
   /*--- SELECT: START ---*/
   .formio-component-select {
     label + .form-group {
       margin-top: 0;
+    }
+
+    .selection.dropdown {
+
+      .choices__input {
+        border: none;
+        background-color: transparent;
+      }
+      .choices__list--multiple .choices__item,
+      .choices__list--multiple .choices__item.is-highlighted{
+        border: 1px solid #b8dbff;
+        background-color: #ebf5ff;
+        padding: 7px;
+        color: inherit;
+
+        span {
+          max-width: 156px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          display: inline-block;
+        }
+
+        .choices__button {
+          border-radius: 0;
+          background-color: #0d5898;
+          padding: 5px 10px 5px 10px;
+          opacity: 1;
+          margin-right: 3px;
+        }
+      }
     }
   }
   /*--- SELECT: END ---*/
@@ -80,7 +273,7 @@
     .form-check-label {
       color: inherit;
       cursor: pointer;
-      display: inline-block;
+      display: flex;
       overflow: hidden;
       position: relative;
       padding-top: 0;
@@ -99,6 +292,7 @@
         display: block;
         position: relative;
         padding-left: 34px;
+        padding-right: 20px;
 
         &:before {
           background: #fff;
@@ -128,4 +322,154 @@
 
   }
   /*--- CHECKBOX: END ---*/
+
+  /*--- Radio: START ---*/
+  .formio-component-radio {
+    .form-check {
+      display: -webkit-box;
+      display: flex;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    .form-check-label {
+      display: block;
+      position: relative;
+      padding-left: 34px;
+      padding-right: 20px;
+      cursor: pointer;
+
+      input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+      }
+    }
+  }
+  /*--- Radio: END ---*/
+
+  /*--- Calendar: START ---*/
+  .formio-component-datetime {
+    .input-group-append span{
+      background: #0d5898;
+      cursor: pointer;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+  /*--- Calendar: END ---*/
+
+}
+
+.flatpickr-months {
+
+  background-color: #5eb0f6;
+  height: 44px;
+
+  .flatpickr-next-month, .flatpickr-prev-month {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    color: transparent;
+
+    &:hover, &:focus, &:active {
+      color: transparent;
+    }
+
+    &:after {
+      content: '';
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      border-color: #1a1a1a;
+      display: inline-block;
+      width: .75em;
+      height: .75em;
+      margin-left: .25em;
+      margin-right: .15em;
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+  }
+  .flatpickr-next-month {
+    &:after {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      margin-left: .15em;
+      margin-right: .25em;
+    }
+  }
+
+  .flatpickr-month {
+    color: #fff;
+    font-size: 12px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0;
+  }
+
+  .flatpickr-current-month {
+    height: 44px;
+    padding: 10px 0;
+  }
+
+  .flatpickr-monthDropdown-months {
+    color: #fff;
+    background-color: #5eb0f6;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.flatpickr-weekdays {
+  background-color: #5eb0f6;
+
+  span.flatpickr-weekday {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.flatpickr-calendar {
+  background: #0d5898;
+  border: 1px solid #0d5898;
+  color: #fff;
+
+  .flatpickr-day {
+    color: #fff;
+
+    &:hover {
+      color: #444;
+    }
+
+    &.prevMonthDay, &.nextMonthDay {
+      color: #fff;
+      opacity: 0.5;
+
+      &:hover {
+        color: #444;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.flatpickr-time {
+  background: #5eb0f6;
+
+  input, input:hover, input:focus {
+    background: #5eb0f6;
+    color: #fff;
+  }
+}
+
+.flatpickr-months .flatpickr-next-month svg, .flatpickr-months .flatpickr-prev-month svg {
+  width: 0;
+  height: 0;
 }
