@@ -1172,27 +1172,27 @@ div[data-oembed-url] {
     background-color: #f6f6f6; }
     .formio-component-form .formio-component-panel .card-body > .formio-component {
       margin-top: 0; }
-  .formio-component-form .formio-component-panel.inner-panel .card-header {
+  .formio-component-form .formio-component-panel.formio-component-panel .card-header {
     background-color: #f6f6f6;
     border-bottom: 1px solid #e7e7e7; }
-    .formio-component-form .formio-component-panel.inner-panel .card-header .card-title {
+    .formio-component-form .formio-component-panel.formio-component-panel .card-header .card-title {
       padding-left: 0;
       padding-right: 0;
       color: #0d5898;
       line-height: 16px;
       font-weight: 700; }
-      .formio-component-form .formio-component-panel.inner-panel .card-header .card-title:before {
+      .formio-component-form .formio-component-panel.formio-component-panel .card-header .card-title:before {
         width: 0;
         height: 0;
         background-image: none; }
-      .formio-component-form .formio-component-panel.inner-panel .card-header .card-title:after {
+      .formio-component-form .formio-component-panel.formio-component-panel .card-header .card-title:after {
         border: none;
         width: 0;
         height: 0; }
-      .formio-component-form .formio-component-panel.inner-panel .card-header .card-title .formio-collapse-icon {
+      .formio-component-form .formio-component-panel.formio-component-panel .card-header .card-title .formio-collapse-icon {
         position: relative;
         margin-right: 15px; }
-        .formio-component-form .formio-component-panel.inner-panel .card-header .card-title .formio-collapse-icon.fa-plus-square-o:before {
+        .formio-component-form .formio-component-panel.formio-component-panel .card-header .card-title .formio-collapse-icon.fa-plus-square-o:before {
           background: #fff;
           border: 1px solid #d6d6d6;
           display: inline-block;
@@ -1204,7 +1204,7 @@ div[data-oembed-url] {
           height: 18px;
           width: 18px;
           content: ''; }
-        .formio-component-form .formio-component-panel.inner-panel .card-header .card-title .formio-collapse-icon.fa-minus-square-o:before {
+        .formio-component-form .formio-component-panel.formio-component-panel .card-header .card-title .formio-collapse-icon.fa-minus-square-o:before {
           display: inline-block;
           margin: 0;
           overflow: hidden;
@@ -1218,7 +1218,7 @@ div[data-oembed-url] {
           content: '\2713';
           color: #fff;
           padding-left: 3px; }
-  .formio-component-form .formio-component-panel.inner-panel .card-body {
+  .formio-component-form .formio-component-panel.formio-component-panel .card-body {
     background-color: inherit;
     margin-left: 0; }
   .formio-component-form .form-group label {
