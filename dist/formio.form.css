@@ -943,7 +943,7 @@ div[data-oembed-url] {
     cursor: pointer;
     position: relative;
     border: 0;
-    background-color: #ffffff; }
+    background-color: inherit; }
     .formio-component-form .formio-component-panel .card-header .card-title {
       font-size: 16px;
       font-weight: 600;
