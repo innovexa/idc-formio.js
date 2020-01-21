@@ -932,6 +932,13 @@ div[data-oembed-url] {
   .formio-component-form .formio-component {
     margin-top: 1rem;
     margin-bottom: 1rem; }
+    .formio-component-form .formio-component legend {
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding-bottom: 0 !important;
+      margin-bottom: 8px;
+      font-weight: 700; }
   .formio-component-form .formio-component-panel .card.border {
     border: 0 !important; }
   .formio-component-form .formio-component-panel .card-header {
