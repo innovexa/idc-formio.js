@@ -1,6 +1,6 @@
 {
   "name": "@innovexa/idc-formiojs",
-  "version": "4.6.10",
+  "version": "4.6.11",
   "description": "JavaScript powered Forms with JSON Form Builder",
   "main": "index.js",
   "types": "index.d.ts",
@@ -58,7 +58,7 @@
     "fast-json-patch": "^2.2.1",
     "fetch-ponyfill": "^6.1.0",
     "flatpickr": "^4.6.3",
-    "i18next": "^17.3.0",
+    "i18next": "^19.1.0",
     "idb": "^4.0.5",
     "json-logic-js": "^1.2.2",
     "jstimezonedetect": "^1.0.7",
