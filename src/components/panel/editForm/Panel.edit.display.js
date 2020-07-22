@@ -138,6 +138,14 @@ export default [
     input: true
   },
   {
+    weight: 650,
+    type: 'checkbox',
+    label: 'Show Only For Admin',
+    tooltip: 'If checked this panel will only display for admin roles',
+    key: 'showOnlyForAdmin',
+    input: true
+  },
+  {
     weight: 651,
     type: 'checkbox',
     label: 'Initially Collapsed',
