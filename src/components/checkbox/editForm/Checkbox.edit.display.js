@@ -1,5 +1,6 @@
 import BuilderUtils from '../../../utils/builder';
 import _ from 'lodash';
+import commonEdit from '../../../common-edit';
 
 export default [
   {
@@ -63,6 +64,7 @@ export default [
       json: { '===': [{ var: 'data.inputType' }, 'radio'] },
     },
   },
+  ...commonEdit,
   {
     type: 'textfield',
     input: true,

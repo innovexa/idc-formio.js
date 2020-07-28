@@ -1,5 +1,6 @@
 import Widgets from '../../../widgets';
 import _ from 'lodash';
+import commonEdit from '../../../common-edit';
 export default [
   {
     weight: 400,
@@ -148,6 +149,7 @@ export default [
     key: 'showWordCount',
     input: true
   },
+  ...commonEdit,
   {
     weight: 1201,
     type: 'checkbox',

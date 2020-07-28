@@ -1,3 +1,5 @@
+import commonEdit from "../../../common-edit";
+
 export default [
   {
     weight: 400,
@@ -29,4 +31,5 @@ export default [
       ],
     },
   },
+  ...commonEdit
 ];

@@ -1,3 +1,5 @@
+import commonEdit from "../../../common-edit";
+
 export default [
   {
     weight: 400,
@@ -59,6 +61,7 @@ export default [
     tooltip: 'Check this if you would like to allow the user to manually enter in the date.',
     weight: 51
   },
+  ...commonEdit,
   {
     type: 'textfield',
     input: true,

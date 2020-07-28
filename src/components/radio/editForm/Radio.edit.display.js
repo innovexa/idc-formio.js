@@ -1,3 +1,5 @@
+import commonEdit from "../../../common-edit";
+
 export default [
   {
     weight: 400,
@@ -35,5 +37,6 @@ export default [
     label: 'Inline Layout',
     tooltip: 'Displays the checkboxes/radios horizontally.',
     weight: 650
-  }
+  },
+  ...commonEdit
 ];

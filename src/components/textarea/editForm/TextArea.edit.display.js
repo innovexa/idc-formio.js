@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import Formio from '../../../Formio';
+import commonEdit from '../../../common-edit';
 
 export default [
   {
@@ -54,6 +55,7 @@ export default [
     },
     weight: 415
   },
+...commonEdit
   {
     type: 'checkbox',
     input: true,
@@ -89,6 +91,7 @@ export default [
       }
     }
   },
+  ...commonEdit,
   {
     type: 'select',
     input: true,
