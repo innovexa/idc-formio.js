@@ -55,7 +55,7 @@ export default [
     },
     weight: 415
   },
-...commonEdit
+...commonEdit,
   {
     type: 'checkbox',
     input: true,
