@@ -1,4 +1,4 @@
-import commonEdit from "../../../common-edit";
+import commonEdit from '../../../common-edit';
 
 export default [
   {
