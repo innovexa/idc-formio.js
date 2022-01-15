@@ -125,7 +125,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^4.0.2",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "mocha": "^6.2.2",
     "natives": "^1.1.6",
     "power-assert": "^1.6.1",
